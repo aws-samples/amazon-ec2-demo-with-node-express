@@ -1,0 +1,15 @@
+{
+  "name": "simple-calculator",
+  "version": "1.0.0",
+  "description": "Demo web app running on EC2",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "buraku",
+  "license": "MIT-0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pm2": "^4.5.0"
+  }
+}
