@@ -22,7 +22,7 @@ application. Refer to below image in case needed:
 
     ```bash
     $ sudo yum update -y
-    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
+    $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
     $ . ~/.nvm/nvm.sh
     # Amazon Linux 2 does not currently support the current LTS release (version 18.x) of Node.js.
     $ nvm install 16 
