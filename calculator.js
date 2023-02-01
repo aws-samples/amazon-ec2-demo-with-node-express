@@ -41,7 +41,20 @@ app.post("/", function (req, res) {
       break;
   }
   console.log(calculator(num1, num2, operator));
-  res.send("the result is " + calculator(num1, num2, operator));
+  // res.send("the result is " + calculator(num1, num2, operator));
+  res.send(`
+    <h3>
+     That was easy, your result is: ${calculator(num1, num2, operator)}
+    </h3>
+    <p>
+    There's no need for compliments.
+    I already know i'm the smartest app in the world hahaha ;)  
+    </p>
+    <img src="https://image-repo-buraku.s3.eu-west-1.amazonaws.com/EC2.png" alt="EC2-Icon"class="center" width="10%" style="vertical-align:middle;margin:0px 50px">
+    <p>
+    and I'm working on an EC2 Instance ;) 
+    </p>
+  `);
 });
 
 app.listen(3000, function () {
