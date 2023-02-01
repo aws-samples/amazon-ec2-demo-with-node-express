@@ -24,7 +24,8 @@ application. Refer to below image in case needed:
     $ sudo yum update -y
     $ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.36.0/install.sh | bash
     $ . ~/.nvm/nvm.sh
-    $ nvm install node     
+    # Amazon Linux 2 does not currently support the current LTS release (version 18.x) of Node.js.
+    $ nvm install 16 
     # to check whether the installation was successful   
     $ node -e "console.log('Running Node.js ' + process.version)"
     ```
