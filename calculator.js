@@ -43,16 +43,15 @@ app.post("/", function (req, res) {
   console.log(calculator(num1, num2, operator));
   // res.send("the result is " + calculator(num1, num2, operator));
   res.send(`
-    <h3>
+    <h2>
      That was easy, your result is: ${calculator(num1, num2, operator)}
-    </h3>
+    </h2>
+    <img src="https://image-repo-buraku.s3.eu-west-1.amazonaws.com/EC2.png" alt="EC2-Icon"class="center" width="10%" style="vertical-align:middle;margin:0px 100px">
     <p>
-    There's no need for compliments.
-    I already know i'm the smartest app in the world hahaha ;)  
-    </p>
-    <img src="https://image-repo-buraku.s3.eu-west-1.amazonaws.com/EC2.png" alt="EC2-Icon"class="center" width="10%" style="vertical-align:middle;margin:0px 50px">
+    There's no need for compliments </p>
+    <p>I already know i'm the smartest app in the world hahaha ;)</p>
     <p>
-    and I'm working on an EC2 Instance ;) 
+    By the way I'm runningg on a single EC2 Instance
     </p>
   `);
 });
